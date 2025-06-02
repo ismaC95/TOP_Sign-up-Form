@@ -2,23 +2,27 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    height: 100vh;
+    font-family: "Roboto"
 }
 
 .container{
     display: flex;
     flex-direction: row;
     width: 100%;
+    max-height: 100vh;
 }
 
 .left-container{
     position: relative;
+    width: 40%;
+    height: 100vh;
 }
 .page-title{
     display: flex;
     flex-direction: row;
-    height: 120px;
+    height: auto;
     width: 100%;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -26,15 +30,125 @@
     gap: 2em;
     background-color: rgba(0, 0, 0, 0.7);
 }
+#japan-img{
+max-width: 100%;
+height: 100vh;
+display: block;
+}
 
 #title{
     color: white;
     height: auto;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
 #japanese-letter{
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: 80px;
+}
+
+/* RIGHT SIDE OF THE SCREEN */
+.right-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f8;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#intro{
+    font-size: 1.5em;
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 300px;
+    margin-bottom: 30px;
+}
+.form-container{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+
+form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+legend{
+    padding-left: 150px;
+    font-size: 1.5em;
+}
+
+fieldset{
+    background: white;
+    border: 0;
+    box-shadow: 0 2px 10px grey;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 150px;
+    
+}
+
+.form-line{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 300px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 0.75em;
+    color: rgb(74, 73, 73);
+}
+
+input{
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid #E5E7EB;
+    border-radius:3px;
+    outline: none;
+}
+
+input:focus{
+    border: 2px solid blue;
+}
+
+.password-input:invalid{
+    border-color: red;
+}
+
+button{
+    margin-top: 20px;
+    width: 250px;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: 150px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    background: rgb(137, 133, 133);
+}
+
+#have-account{
+    padding-left: 150px;
+}
+
+a{
+    text-decoration: none;
+    color:  rgb(137, 133, 133);
+    font-weight: bold;
 }

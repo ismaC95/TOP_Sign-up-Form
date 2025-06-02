@@ -5,18 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP | Sign-Up</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="left-container">
-            <img src="./images/Side Image.jpg">
+            <img id="japan-img" src="./images/Side Image.jpg">
             <div class="page-title">
                 <img id="japanese-letter" src="./images/Japanese letter.png">
                 <p id="title">JAPAN TRIP</p>
             </div>
         </div>
         <div class="right-container">
-            
+            <h3 id="intro">
+                To conquer Japan as we are conquering our 30s, let's plan the best friends trip that has been done in the history of the nippon country.<br><br>
+                Create an account before being able to add your preferred activities.
+            </h3>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <legend> Let's do this!</legend>
+                    <fieldset>
+                        <div class="form-line">
+                            <div class="form-item">
+                                <label for="name">FIRST NAME</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div class="form-item">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-item">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-item">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="text" id="phone" name="phone" min-length="6">
+                            </div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-item">
+                                <label for="password">PASSWORD</label>
+                                <input class="password-input" type="password" id="password" name="password" minlength="6">
+                            </div>
+                            <div class="form-item">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input class="password-input" type="password" id="confirm-password" name="confirm-password" minlength="6">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Create Account</button>
+                    <p id="have-account">Do you have an account? <a href="#">Log in</a></p>
+                </form>
+            </div>
         </div>
     </div>
 </body>
